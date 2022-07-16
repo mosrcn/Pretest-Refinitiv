@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  overflow: auto;
+}
+.column {
+  border: 1px solid #000;
+}
+.column:first-child {
+  min-width: 200px;
+  max-width: 200px;
+}
+.column:nth-child(2) {
+  min-width: 100px;
+  flex: auto;
+}
+.column:last-child {
+  min-width: 300px;
+  max-width: 300px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  /* Firefox */
+  -moz-appearance: textfield;
+}
